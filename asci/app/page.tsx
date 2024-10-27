@@ -1,10 +1,8 @@
 'use client';
 import React, { useRef } from 'react';
 import Spline from '@splinetool/react-spline/next';
-import { useRouter } from 'next/navigation';
 
 const ASLLandingPage: React.FC = () => {
-  const router = useRouter();
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const playAudio = () => {
@@ -47,8 +45,6 @@ const ASLLandingPage: React.FC = () => {
           >
             Intro for ESLR 
           </button>
-
-         
 
           {/* External Link Button */}
           <button
